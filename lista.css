@@ -1,0 +1,110 @@
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-image: url('02.png');
+    /* Garante que a imagem cubra toda a tela */
+    background-size: cover;
+    /* Impede que a imagem se repita */
+    background-repeat: no-repeat;
+    /* Centraliza a imagem */
+    background-position: center center;
+    /* Mantém a imagem fixa enquanto o conteúdo rola */
+    background-attachment: fixed;
+}
+
+/* Estilo para o container principal */
+.container {
+    width: 300px;
+    margin: 0 auto;
+    /* Branco para o fundo do container */
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    /* Sombra suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo para o título */
+h1 {
+    /* Tom de rosa bebê para o título */
+    color: #F0A3BC;
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* Adiciona uma fonte mais decorativa se desejar (ex: 'Pacifico') */
+    /* font-family: 'Pacifico', cursive; */
+}
+
+/* Estilo para o formulário */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o rótulo (label) */
+label {
+    font-size: 15px;
+    color: #777;
+    margin-right: 10px;
+}
+
+/* Estilo para o campo de texto (input) */
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 6px;
+    /* Borda suave */
+    border: 1px solid #E0E0E0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    /* Efeito de foco com rosa suave */
+    border-color: #F0A3BC;
+}
+
+/* Estilo para o botão */
+button {
+    padding: 10px 20px;
+    /* Rosa suave para o botão */
+    background-color: #F0A3BC;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    /* Rosa um pouco mais escuro ao passar o mouse */
+    background-color: #E68B9E;
+}
+
+/* Estilo para a lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para os itens da lista */
+li {
+    /* Fundo suave para os itens */
+    background-color: #FEF7F9;
+    color: #555;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #F0A3BC;
+    text-align: left;
+}

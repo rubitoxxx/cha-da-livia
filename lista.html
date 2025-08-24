@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" href="lista.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+    <div>
+        <a href="01.png" target="_blank">
+            <img src="01.png" alt="Imagem 01" class="image">
+        </a>
+    </div>
+    <div class="container">
+        <h1>Lista de Presença</h1>
+        <form id="attendance-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite o nome" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="attendance-list">
+            <!-- A lista de presença será exibida aqui -->
+        </ul>
+    </div>
+    <script type="module" src="lista.js"></script>
+</body>
+</html>
