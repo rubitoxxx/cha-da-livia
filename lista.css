@@ -13,36 +13,28 @@ body {
     text-align: center;
     padding: 20px;
     background-image: url('02.png');
-    /* Garante que a imagem cubra toda a tela */
     background-size: cover;
-    /* Impede que a imagem se repita */
     background-repeat: no-repeat;
-    /* Centraliza a imagem */
     background-position: center center;
-    /* Mantém a imagem fixa enquanto o conteúdo rola */
     background-attachment: fixed;
 }
 
 /* Estilo para o container principal */
 .container {
-    width: 300px;
+    width: 90%; /* Ajuste flexível para dispositivos móveis */
+    max-width: 400px; /* Largura máxima para desktop */
     margin: 0 auto;
-    /* Branco para o fundo do container */
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 12px;
-    /* Sombra suave */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* Estilo para o título */
 h1 {
-    /* Tom de rosa bebê para o título */
     color: #F0A3BC;
-    font-size: 28px;
+    font-size: 1.8rem; /* Ajuste relativo para dispositivos móveis */
     margin-bottom: 20px;
-    /* Adiciona uma fonte mais decorativa se desejar (ex: 'Pacifico') */
-    /* font-family: 'Pacifico', cursive; */
 }
 
 /* Estilo para o formulário */
@@ -52,7 +44,7 @@ form {
 
 /* Estilo para o rótulo (label) */
 label {
-    font-size: 15px;
+    font-size: 1rem;
     color: #777;
     margin-right: 10px;
 }
@@ -60,24 +52,22 @@ label {
 /* Estilo para o campo de texto (input) */
 input[type="text"] {
     padding: 10px;
-    width: 200px;
+    width: 100%; /* Preenche a largura disponível */
+    max-width: 300px; /* Tamanho máximo do campo de texto */
     margin-right: 10px;
     border-radius: 6px;
-    /* Borda suave */
     border: 1px solid #E0E0E0;
     outline: none;
     transition: border-color 0.3s;
 }
 
 input[type="text"]:focus {
-    /* Efeito de foco com rosa suave */
     border-color: #F0A3BC;
 }
 
 /* Estilo para o botão */
 button {
     padding: 10px 20px;
-    /* Rosa suave para o botão */
     background-color: #F0A3BC;
     color: white;
     border: none;
@@ -87,7 +77,6 @@ button {
 }
 
 button:hover {
-    /* Rosa um pouco mais escuro ao passar o mouse */
     background-color: #E68B9E;
 }
 
@@ -99,7 +88,6 @@ ul {
 
 /* Estilo para os itens da lista */
 li {
-    /* Fundo suave para os itens */
     background-color: #FEF7F9;
     color: #555;
     margin: 8px 0;
@@ -107,4 +95,24 @@ li {
     border-radius: 8px;
     border-left: 4px solid #F0A3BC;
     text-align: left;
+}
+
+/* Media Queries - Ajustes específicos para telas menores (mobile) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 95%; /* Maior flexibilidade em telas menores */
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%; /* O botão ocupa toda a largura disponível em telas pequenas */
+    }
 }
