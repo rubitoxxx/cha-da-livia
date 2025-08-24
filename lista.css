@@ -1,72 +1,118 @@
-/* Resetando margens e preenchimentos padrão */
+/* Reseta estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais do body */
+/* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f4f4f9;
+    color: #333;
     text-align: center;
     padding: 20px;
+    background-image: url('02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-/* Container principal */
+/* Estilo para o container principal */
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px; /* Largura máxima para telas grandes */
+    width: 90%; /* Ajuste flexível para dispositivos móveis */
+    max-width: 400px; /* Largura máxima para desktop */
     margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Estilo da imagem */
-.image {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
+/* Estilo para o título */
+h1 {
+    color: #F0A3BC;
+    font-size: 1.8rem; /* Ajuste relativo para dispositivos móveis */
     margin-bottom: 20px;
 }
 
-/* Estilo da mensagem */
-.message {
-    font-size: 1.2em;
-    color: #333;
-    font-weight: bold;
+/* Estilo para o formulário */
+form {
+    margin-bottom: 20px;
 }
 
-/* Media Queries para telas menores (mobile) */
+/* Estilo para o rótulo (label) */
+label {
+    font-size: 1rem;
+    color: #777;
+    margin-right: 10px;
+}
+
+/* Estilo para o campo de texto (input) */
+input[type="text"] {
+    padding: 10px;
+    width: 100%; /* Preenche a largura disponível */
+    max-width: 300px; /* Tamanho máximo do campo de texto */
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #F0A3BC;
+}
+
+/* Estilo para o botão */
+button {
+    padding: 10px 20px;
+    background-color: #F0A3BC;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #E68B9E;
+}
+
+/* Estilo para a lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para os itens da lista */
+li {
+    background-color: #FEF7F9;
+    color: #555;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #F0A3BC;
+    text-align: left;
+}
+
+/* Media Queries - Ajustes específicos para telas menores (mobile) */
 @media (max-width: 768px) {
-    /* Ajusta a largura do container para telas menores */
+    h1 {
+        font-size: 1.5rem;
+    }
+
     .container {
-        width: 90%; /* Maior flexibilidade em telas pequenas */
+        width: 95%; /* Maior flexibilidade em telas menores */
         padding: 15px;
     }
 
-    /* Reduz o tamanho da fonte da mensagem para telas pequenas */
-    .message {
-        font-size: 1em;
+    input[type="text"] {
+        width: 100%;
     }
 
-    /* Ajusta a largura da imagem para 100% em telas pequenas */
-    .image {
-        max-width: 100%;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajusta o padding do container para telas muito pequenas */
-    .container {
-        padding: 10px;
-    }
-
-    /* Ajusta o tamanho da fonte da mensagem para dispositivos móveis */
-    .message {
-        font-size: 0.9em;
+    button {
+        width: 100%; /* O botão ocupa toda a largura disponível em telas pequenas */
     }
 }
